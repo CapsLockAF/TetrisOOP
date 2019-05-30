@@ -1,2 +1,1 @@
-
-h1{display:-webkit-box;display:-ms-flexbox;display:flex;color:#faf}.completed{color:red}
+body{margin:0;background-color:#000}#root{padding:3rem;text-align:center}#root h1{font-family:Press Start\ 2P,Consolas,monospace;color:#fff}#root canvas{display:block;margin:0 auto}

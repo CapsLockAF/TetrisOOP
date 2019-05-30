@@ -19,7 +19,7 @@ module.exports = {
         app: PATHS.src
     },
     output: {
-        filename: `${PATHS.assets}js/[name].[hash].js`,
+        filename: `${PATHS.assets}js/[name].js`,
         path: PATHS.dist,
         publicPath: '/'
     },
@@ -50,7 +50,7 @@ module.exports = {
                     options: { sourceMap:true }
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap:true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
+                    options: { sourceMap:true, config: { path: `./postcss.config.js` } }
                 }, {
                     loader: 'sass-loader',
                     options: { sourceMap:true }
@@ -74,7 +74,7 @@ module.exports = {
 
     plugins: [
         new MiniCssExtractPlugin({
-            filename: `${PATHS.assets}css/[name].[hash].css`
+            filename: `${PATHS.assets}css/[name].css`
         }),
         new HtmlWebpackPlugin({
             hash: false,
